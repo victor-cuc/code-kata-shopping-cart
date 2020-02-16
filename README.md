@@ -1,27 +1,17 @@
-# CODE-KATA-Shopping-Cart
+## Thought process
 
-## Workflow
-- Treat this like a real assignment, but only spend up to two hours on it - it doesn't matter how far you get
-- Fork the project to your personal Github account (click on the fork button in the top right corner)
-- Clone the forked version of this repository
-- Include a `README`
-- Push your work up to your fork
-- Submit a link to your forked repository
+First I created a map to store the count of each item.
 
-## Instructions
-You should implement a supermarket checkout which:
-- always accepts a string of items and gives back the total price
-- discounts any offers from the total price
+The program iterates through the input, letter by letter, looks for the item in the map, and either increments the count or creates a new entry with count 0.
 
-Use the following pricing information:
+Then, for each entry it calculates the final price after discount and then adds it to the total.
 
-| Item  | Price | Offer     |
-| :---: | :---: | :---:     |
-| A     | 50    | 3 for 130 |
-| B     | 30    | 2 for 37  |
-| C     | 20    | N/A       |
-| D     | 10    | N/A       |
+Finally, the total is printed and the program ends.
 
-For example:
-- `'DABA'` gives `140`
-- `'BBBB'` gives `74`
+I know that the program could have been less hard-coded but I wanted to be as quick as I could.
+
+## How to run
+
+To run the file, run Checkout with the letters as arguments **divided by whitespace**
+
+*For example, "java Checkout A A B C"*
